@@ -1,0 +1,159 @@
+{
+  "partnerships": {
+    "activeBrands": 156,
+    "invitedBrands": 89,
+    "activeChange": 12.5,
+    "invitedChange": -3.2,
+    "totalRevenue": 245800,
+    "monthlyGrowth": 18.6
+  },
+  "analytics": {
+    "clicks": 45230,
+    "dpvs": 32450,
+    "atcs": 8950,
+    "salesCommission": 12500.75,
+    "conversionRate": 19.8,
+    "earningsPerClick": 2.85,
+    "totalSales": 98750.5,
+    "averageOrderValue": 127.85
+  },
+  "chartData": [
+    {
+      "month": "Jan",
+      "clicks": 12000,
+      "dpvs": 8500,
+      "atcs": 2100,
+      "conversions": 420,
+      "sales": 15600,
+      "commission": 2340
+    },
+    {
+      "month": "Feb",
+      "clicks": 15200,
+      "dpvs": 11200,
+      "atcs": 2800,
+      "conversions": 560,
+      "sales": 21840,
+      "commission": 3276
+    },
+    {
+      "month": "Mar",
+      "clicks": 18500,
+      "dpvs": 13800,
+      "atcs": 3450,
+      "conversions": 690,
+      "sales": 26910,
+      "commission": 4037
+    },
+    {
+      "month": "Apr",
+      "clicks": 16800,
+      "dpvs": 12600,
+      "atcs": 3150,
+      "conversions": 630,
+      "sales": 24570,
+      "commission": 3686
+    },
+    {
+      "month": "May",
+      "clicks": 22100,
+      "dpvs": 16400,
+      "atcs": 4100,
+      "conversions": 820,
+      "sales": 31980,
+      "commission": 4797
+    },
+    {
+      "month": "Jun",
+      "clicks": 25600,
+      "dpvs": 19200,
+      "atcs": 4800,
+      "conversions": 960,
+      "sales": 37440,
+      "commission": 5616
+    },
+    {
+      "month": "Jul",
+      "clicks": 28900,
+      "dpvs": 21700,
+      "atcs": 5425,
+      "conversions": 1085,
+      "sales": 42330,
+      "commission": 6350
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Premium Wireless Headphones",
+      "price": 199.99,
+      "category": "Electronics",
+      "stock": 45,
+      "status": "In Stock",
+      "rating": 4.5,
+      "sales": 234,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop&auto=format",
+      "description": "High-quality wireless headphones with active noise cancellation"
+    },
+    {
+      "id": 2,
+      "name": "Smart Fitness Watch",
+      "price": 299.99,
+      "category": "Wearables",
+      "stock": 23,
+      "status": "Low Stock",
+      "rating": 4.2,
+      "sales": 189,
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&h=200&fit=crop&auto=format",
+      "description": "Advanced fitness tracking with heart rate monitoring"
+    },
+    {
+      "id": 3,
+      "name": "Bluetooth Speaker",
+      "price": 79.99,
+      "category": "Audio",
+      "stock": 67,
+      "status": "In Stock",
+      "rating": 4.7,
+      "sales": 456,
+      "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=300&h=200&fit=crop&auto=format",
+      "description": "Portable Bluetooth speaker with powerful bass"
+    },
+    {
+      "id": 4,
+      "name": "Gaming Keyboard",
+      "price": 129.99,
+      "category": "Gaming",
+      "stock": 12,
+      "status": "Low Stock",
+      "rating": 4.6,
+      "sales": 278,
+      "image": "https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=300&h=200&fit=crop&auto=format",
+      "description": "Mechanical gaming keyboard with RGB backlighting"
+    },
+    {
+      "id": 5,
+      "name": "Laptop Stand",
+      "price": 49.99,
+      "category": "Accessories",
+      "stock": 89,
+      "status": "In Stock",
+      "rating": 4.3,
+      "sales": 123,
+      "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=300&h=200&fit=crop&auto=format",
+      "description": "Adjustable aluminum laptop stand for better ergonomics"
+    },
+    {
+      "id": 6,
+      "name": "Webcam HD",
+      "price": 89.99,
+      "category": "Electronics",
+      "stock": 56,
+      "status": "In Stock",
+      "rating": 4.0,
+      "sales": 134,
+      "image": "https://images.unsplash.com/photo-1587614382346-4ec70e388b28?w=300&h=200&fit=crop&auto=format",
+      "description": "1080p HD webcam with auto-focus and built-in microphone"
+    }
+  ]
+}
