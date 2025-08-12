@@ -61,83 +61,92 @@ const AnalyticsChart: React.FC = () => {
 
   return (
     <div className="space-y-6">
-      {/* Line Chart */}
       <div className="bg-white p-4 rounded-lg border">
-        <h3 className="text-lg font-medium mb-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="col-span-1">
+            <ResponsiveContainer width="100%" height={350}>
+              <LineChart data={chartData}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="month" />
+                <YAxis />
+                <Tooltip
+                  formatter={(value) => [
+                    formatTooltipValue(value as number),
+                    metricConfig.name,
+                  ]}
+                />
+                <Legend />
+                <Line
+                  type="monotone"
+                  dataKey={metricConfig.dataKey}
+                  stroke={metricConfig.color}
+                  strokeWidth={2}
+                  dot={{ fill: metricConfig.color, strokeWidth: 2, r: 4 }}
+                />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+          <div className="col-span-1">
+            <ResponsiveContainer width="100%" height={350}>
+              <BarChart data={chartData}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="month" />
+                <YAxis />
+                <Tooltip
+                  formatter={(value) => [
+                    formatTooltipValue(value as number),
+                    metricConfig.name,
+                  ]}
+                />
+                <Legend />
+                <Bar dataKey={metricConfig.dataKey} fill={metricConfig.color} />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+
+          <div className="col-span-1">
+            <ResponsiveContainer width="100%" height={350}>
+              <AreaChart data={chartData}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="month" />
+                <YAxis />
+                <Tooltip
+                  formatter={(value) => [
+                    formatTooltipValue(value as number),
+                    metricConfig.name,
+                  ]}
+                />
+                <Legend />
+                <Area
+                  type="monotone"
+                  dataKey={metricConfig.dataKey}
+                  stroke={metricConfig.color}
+                  fill={metricConfig.color}
+                  fillOpacity={0.6}
+                />
+              </AreaChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+
+        {/* <h3 className="text-lg font-medium mb-4">
           Trend Analysis - {metricConfig.name}
-        </h3>
-        <ResponsiveContainer width="100%" height={350}>
-          <LineChart data={chartData}>
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="month" />
-            <YAxis />
-            <Tooltip
-              formatter={(value) => [
-                formatTooltipValue(value as number),
-                metricConfig.name,
-              ]}
-            />
-            <Legend />
-            <Line
-              type="monotone"
-              dataKey={metricConfig.dataKey}
-              stroke={metricConfig.color}
-              strokeWidth={2}
-              dot={{ fill: metricConfig.color, strokeWidth: 2, r: 4 }}
-            />
-          </LineChart>
-        </ResponsiveContainer>
+        </h3> */}
       </div>
 
       {/* Bar Chart */}
-      <div className="bg-white p-4 rounded-lg border">
+      {/* <div className="bg-white p-4 rounded-lg border">
         <h3 className="text-lg font-medium mb-4">
           Monthly Comparison - {metricConfig.name}
         </h3>
-        <ResponsiveContainer width="100%" height={350}>
-          <BarChart data={chartData}>
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="month" />
-            <YAxis />
-            <Tooltip
-              formatter={(value) => [
-                formatTooltipValue(value as number),
-                metricConfig.name,
-              ]}
-            />
-            <Legend />
-            <Bar dataKey={metricConfig.dataKey} fill={metricConfig.color} />
-          </BarChart>
-        </ResponsiveContainer>
-      </div>
+      </div> */}
 
       {/* Area Chart */}
-      <div className="bg-white p-4 rounded-lg border">
+      {/* <div className="bg-white p-4 rounded-lg border">
         <h3 className="text-lg font-medium mb-4">
           Cumulative Growth - {metricConfig.name}
         </h3>
-        <ResponsiveContainer width="100%" height={350}>
-          <AreaChart data={chartData}>
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="month" />
-            <YAxis />
-            <Tooltip
-              formatter={(value) => [
-                formatTooltipValue(value as number),
-                metricConfig.name,
-              ]}
-            />
-            <Legend />
-            <Area
-              type="monotone"
-              dataKey={metricConfig.dataKey}
-              stroke={metricConfig.color}
-              fill={metricConfig.color}
-              fillOpacity={0.6}
-            />
-          </AreaChart>
-        </ResponsiveContainer>
-      </div>
+      </div> */}
     </div>
   );
 };
